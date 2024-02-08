@@ -1,0 +1,55 @@
+<h2 mat-dialog-title>Add Product</h2>
+<div mat-dialog-content>
+  <form class="example-form" [formGroup]="productForm">
+    <mat-form-field appearance="outline">
+      <mat-label>Name of product</mat-label>
+      <input matInput formControlName="productName" />
+      <mat-icon matSuffix>dialpad</mat-icon>
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Category</mat-label>
+      <mat-select formControlName="category">
+        <mat-option value="iphone">Iphone</mat-option>
+        <mat-option value="samsung">Samsung</mat-option>
+        <mat-option value="huawei">Huawei</mat-option>
+      </mat-select>
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Choose a date</mat-label>
+      <input matInput formControlName="date" [matDatepicker]="picker" />
+      <mat-datepicker-toggle
+        matIconSuffix
+        [for]="picker"
+      ></mat-datepicker-toggle>
+      <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
+    <mat-radio-group
+      formControlName="condition"
+      aria-labelledby="example-radio-group-label"
+      class="example-radio-group"
+    >
+      <mat-radio-button class="example-radio-button" value="new"
+        >New</mat-radio-button
+      >
+      <mat-radio-button class="example-radio-button" value="second-hand"
+        >Second Hand</mat-radio-button
+      >
+      <mat-radio-button class="example-radio-button" value="by"
+        >BY</mat-radio-button
+      >
+    </mat-radio-group>
+    <mat-form-field appearance="outline">
+      <mat-label>Price</mat-label>
+      <input matInput formControlName="price" placeholder="$" />
+      <mat-icon matSuffix>attach_money</mat-icon>
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>Comment</mat-label>
+      <textarea matInput formControlName="comment"></textarea>
+    </mat-form-field>
+  </form>
+</div>
+<mat-dialog-actions [align]="'end'">
+  <button color="warn" mat-raised-button mat-dialog-close>Close</button>
+  <button color="primary" mat-raised-button (click)="addProduct()">Save</button>
+</mat-dialog-actions>

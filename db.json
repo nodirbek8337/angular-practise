@@ -1,0 +1,58 @@
+{
+  "productList": [
+    {
+      "id": "9475",
+      "productName": "Iphone X",
+      "category": "iphone",
+      "condition": "new",
+      "price": "1500",
+      "comment": "this is a great phone",
+      "date": "2024-02-07T19:00:00.000Z"
+    },
+    {
+      "id": "5726",
+      "productName": "Samsung",
+      "category": "samsung",
+      "condition": "second-hand",
+      "price": "500",
+      "comment": "this phone is easy to use",
+      "date": "2024-02-14T19:00:00.000Z"
+    },
+    {
+      "id": "8e0c",
+      "productName": "Huawei",
+      "category": "huawei",
+      "condition": "new",
+      "price": "700",
+      "comment": "Very vell phone",
+      "date": "2024-02-13T19:00:00.000Z"
+    },
+    {
+      "id": "dd22",
+      "productName": "Iphone 15 Pro",
+      "category": "iphone",
+      "condition": "new",
+      "price": "2000",
+      "comment": "This is very very vell",
+      "date": "2024-02-09T19:00:00.000Z"
+    },
+    {
+      "id": "c6fb",
+      "productName": "Samsung 20",
+      "category": "samsung",
+      "condition": "new",
+      "price": "800",
+      "comment": "This is samsung",
+      "date": "2024-02-05T19:00:00.000Z"
+    },
+    {
+      "id": "9559",
+      "productName": "Samsung 21",
+      "category": "samsung",
+      "condition": "new",
+      "price": "900",
+      "comment": "This is bew phone",
+      "date": "2024-02-15T19:00:00.000Z"
+    }
+  ]
+}
