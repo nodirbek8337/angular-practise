@@ -51,5 +51,7 @@
 </div>
 <mat-dialog-actions [align]="'end'">
   <button color="warn" mat-raised-button mat-dialog-close>Close</button>
-  <button color="primary" mat-raised-button (click)="addProduct()">Save</button>
+  <button color="primary" mat-raised-button (click)="addProduct()">
+    {{ actionBtn }}
+  </button>
 </mat-dialog-actions>

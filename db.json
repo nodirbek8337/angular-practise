@@ -1,13 +1,13 @@
 {
   "productList": [
     {
-      "id": "9475",
       "productName": "Iphone X",
       "category": "iphone",
       "condition": "new",
-      "price": "1500",
+      "price": "1800",
       "comment": "this is a great phone",
-      "date": "2024-02-07T19:00:00.000Z"
+      "date": "2024-02-14T19:00:00.000Z",
+      "id": "9475"
     },
     {
       "id": "5726",
@@ -37,22 +37,13 @@
       "date": "2024-02-09T19:00:00.000Z"
     },
     {
-      "id": "c6fb",
-      "productName": "Samsung 20",
-      "category": "samsung",
-      "condition": "new",
-      "price": "800",
-      "comment": "This is samsung",
-      "date": "2024-02-05T19:00:00.000Z"
-    },
-    {
-      "id": "9559",
-      "productName": "Samsung 21",
-      "category": "samsung",
-      "condition": "new",
-      "price": "900",
-      "comment": "This is bew phone",
-      "date": "2024-02-15T19:00:00.000Z"
+      "productName": "Huawei 15",
+      "category": "huawei",
+      "condition": "second-hand",
+      "price": "1450",
+      "comment": "Normal",
+      "date": "2024-02-20T19:00:00.000Z",
+      "id": "1b38"
     }
   ]
 }

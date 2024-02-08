@@ -20,6 +20,7 @@ export class AppComponent implements OnInit {
     'price',
     'condition',
     'comment',
+    'action',
   ];
   dataSource: MatTableDataSource<any> = new MatTableDataSource<any>();
 
@@ -36,7 +37,14 @@ export class AppComponent implements OnInit {
   }
 
   openDialog() {
-    this.dialog.open(DialogComponent, { width: '30%' });
+    this.dialog
+      .open(DialogComponent, { width: '30%' })
+      .afterClosed()
+      .subscribe((res) => {
+        if (res === 'save') {
+          this.getAllProduct();
+        }
+      });
   }
 
   getAllProduct() {
@@ -57,5 +65,28 @@ export class AppComponent implements OnInit {
     if (this.dataSource.paginator) {
       this.dataSource.paginator.firstPage();
     }
+  }
+
+  editProduct(row: any) {
+    this.dialog
+      .open(DialogComponent, { width: '30%', data: row })
+      .afterClosed()
+      .subscribe((res) => {
+        if (res === 'update') {
+          this.getAllProduct();
+        }
+      });
+  }
+
+  deleteProduct(id: number) {
+    this.apiService.deleteProduct(id).subscribe({
+      next: (res) => {
+        alert('Product delected successfully');
+        this.getAllProduct();
+      },
+      error: () => {
+        alert('Something went wrong while delete product!!!');
+      },
+    });
   }
 }
